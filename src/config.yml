@@ -1,0 +1,15 @@
+#Default amount of seconds to ignite a player if the seconds argument is omitted
+default: 3
+
+#Customizable Messages
+messages:
+  #Prefix before all plugin messages
+  prefix: "&7[&bSpontaneousCombustion&7] &e"
+  no-permission: "&cYou do not have permission to use this command"
+  description: "This command spontaneously combusts a player for an optionally specified number of seconds. Usage: /combust <target> [seconds]"
+  success: "&aSuccessfully lit &e%TARGET%&a on fire for &e%SECONDS%&a seconds."
+  reload: "&aReloaded Config."
+  invalid:
+    unknown-target: "The specified player &c%TARGET%&e was not found."
+    not-int: "The provided number of seconds is not an integer"
+    to-many-args: "To many arguments were sent. Usage: /combust <target> [seconds]"

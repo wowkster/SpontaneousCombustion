@@ -1,0 +1,18 @@
+name: SpontaneousCombustion
+version: 1.0
+main: com.adrianwowk.spontaneouscombustion.SpontaneousCombustion
+author: Adrian Wowk
+commands:
+  combust:
+    usage: /<command> <target> [seconds]
+    aliases: [sc]
+api-version: 1.14
+permissions:
+  spontaneouscombustion.combust:
+    description: Allows use of /combust command
+    default: op
+  spontaneouscombustion.*:
+    description: Wildcard permission
+    default: op
+    children:
+      spontaneouscombustion.combust: true
