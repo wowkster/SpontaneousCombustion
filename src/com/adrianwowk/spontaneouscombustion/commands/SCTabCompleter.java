@@ -17,9 +17,8 @@ public class SCTabCompleter implements TabCompleter {
         List<String> list = new ArrayList<>();
 
         if (cmd.getName().equalsIgnoreCase("combust")) {
-            Player p = (Player) sender;
 
-            if (p.hasPermission("spontaneouscombustion.combust") && args.length <= 1) {
+            if (sender.hasPermission("spontaneouscombustion.combust") && args.length <= 1) {
                 // Get item in hand and display enchantments
                 for (Player player : Bukkit.getOnlinePlayers())
                     list.add(player.getDisplayName());

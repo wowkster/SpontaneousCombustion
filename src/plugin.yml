@@ -1,5 +1,5 @@
 name: SpontaneousCombustion
-version: 1.0
+version: 1.0.2
 main: com.adrianwowk.spontaneouscombustion.SpontaneousCombustion
 author: Adrian Wowk
 commands:

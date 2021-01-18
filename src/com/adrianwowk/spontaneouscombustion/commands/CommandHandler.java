@@ -70,7 +70,7 @@ public class CommandHandler implements CommandExecutor {
     }
 
     public void combustPlayer(Player target, int seconds){
-        int ticks = 3 * 20;
+        int ticks = seconds * 20;
         target.setFireTicks(ticks);
     }
 }
